@@ -33,45 +33,52 @@
         background-color: #00002F;
     }
 
-    #content {
+    #content1 {
         margin-left: auto;
         margin-right: auto;
     }
-
+#content2 {
+  margin-left: auto;
+  margin-right: auto;
+}
     #header {
         clear: both;
         display: table;
         margin-left: auto;
         margin-right: auto;
         font-family: verdana;
+        padding: 30px;
+    }
+    #postlist {
+      margin: 25px;
+      text-align: start;
     }
 body {
-        background-color: #181818;
-        color: #eee;
+        background-color: #212121;
+        color: #000000;
         animation: fade_in 750ms;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         line-height: 1.2;
         margin: 0;
-        padding: 15px 15px 30px 15px;
     }
 h1 {
-        color: white;
+        color: ;
         text-align: center;
         font-size: 35px;
+        margin-top: 57px;
     }
 h3 {
-        color: #1a1;
         font-size: 30px;
-        font-family: verdana;
+        margin-bottom: -15px;
 }
 p {
-        font-family: verdana;
         font-size: 20px;
+        color: black;
     }
 a, a:hover, a:active, a:visited {
         text-decoration: none;
-        color: #1a1;
+        color: #ffffff;
     }
 sa:hover, a:active {
         color: #1c1;
@@ -79,3 +86,16 @@ sa:hover, a:active {
     #content, #header {
       width: 769px;
         max-width: 768px; }
+  ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+  li {
+    margin: 10px;
+  }
