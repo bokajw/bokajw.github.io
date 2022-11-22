@@ -15,8 +15,44 @@
         top: 2px;
         left: 2px;
     }
+    #header_right {
+        align-items: center;
+        text-shadow: 5px 5px #555;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #header_left {
+        float:left;
+        text-align:center;
+    }
+    #header_left > a > img {
+        width: 180px;
+        box-shadow: 5px 5px #555;
+        text-align: center;
+        background-color: #00002F;
+    }
+
+    #content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header {
+        clear: both;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
 body {
-        background-color: gray;
+        background-color: #181818;
+        color: #eee;
+        animation: fade_in 750ms;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.1;
+        margin: 0;
+        padding: 15px 15px 30px 15px;
     }
 h1 {
         color: white;
