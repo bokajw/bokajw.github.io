@@ -15,6 +15,9 @@
         top: 2px;
         left: 2px;
     }
+.icon {
+  max-width: 20px;
+}
 #lista {
   text-align: center;
 }
@@ -58,6 +61,7 @@
       text-align: start;
     }
 body {
+        background-image: url("img/snazzy-image.png");
         background-color: #212121;
         color: #000000;
         animation: fade_in 750ms;
