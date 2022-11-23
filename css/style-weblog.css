@@ -25,7 +25,7 @@
     }
 #content1 {
         max-width: 900px;
-        margin-left: auto;
+        margin-left: 230px;
         margin-right: auto;
 }
 #postlist {
@@ -51,9 +51,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+#categorylist {
+  margin-top: 30px;
+}
 .icon2 {
   max-width: 30px;
 }
+/* here is the thingy*/
+#content1, #content2 {
+  float: left;
+          width: 40%;
+          padding: 15px;
+          text-align: justify;
+}
+
+
 body {
   background-color: black;
   font-family: ibm_vga,monospace!important;
@@ -69,4 +81,10 @@ h1 {
   color: #14e05f;
   text-align: center;
   font-size: 50px;
+}
+h2 {
+  color: #14e05f;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 40px;
 }
