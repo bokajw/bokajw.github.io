@@ -1,11 +1,10 @@
 #header {
-  align-items: center;
   text-shadow: 4px 4px #084533;
   text-align: center;
-  clear: both;
-  margin-left: 40%;
-  margin-right: 40%;
-  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
 
 }
 .menuitem {
@@ -24,19 +23,23 @@
         right: 18px;
     }
 #content1 {
-  display: table-cell;
-  position: absolute;
-  width: 750px;
-  margin-left: 250px
+  display: ;
+  position: ;
+  width: 530px;
+  margin-left: 27%;
+  margin-right: auto;
 }
 .postlist1 {
-        max-width: 500px;
         list-style-type: none;
-        text-align: justify;
-        margin-left: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        position: relative;
+
       }
 .postlist {
   margin-bottom: 3px;
+
 }
 .icon {
   max-width: 30px;
@@ -53,10 +56,11 @@
   position: fixed;
   margin-top: -40px;
 }
+
 #categorylist {
-  margin-top: 0px;
-  text-align: left;
   list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .icon2 {
   max-width: 30px;
@@ -68,11 +72,12 @@
   margin-right: auto;
 }
 
-
-
 body {
   background-color: black;
   font-family: ibm_vga,monospace!important;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a, a:active, a:visited {
         text-decoration: none;
@@ -92,4 +97,25 @@ h2 {
   font-size: 20px;
   margin-left: 10%;
   position: static;
+}
+p {
+  color: white;
+}
+p.fuck {
+  margin-left: auto;
+  margin-right: auto;
+  width: 290px;
+}
+li.postlist:hover {
+  background-color: blue;
+}
+li.category:hover {
+  background-color: blue;
+}
+* {
+  box-sizing: inherit;
+}
+#grog {
+  color: #e01469;
+  background-color: blue;
 }

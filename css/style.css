@@ -79,6 +79,10 @@
       border-radius: 2px;
       margin-top: 30px;
     }
+    #grog {
+      color: #e01469;
+      background-color: blue;
+    }
 body {
         background-image: url('../img/sn azzy-image (4).png');
         background-size: cover;
