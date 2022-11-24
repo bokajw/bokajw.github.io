@@ -67,7 +67,7 @@
       margin-left: 0px;
       text-align: start;
       margin-top: -20px;
-      outline-style: da shed;
+      outline-style: das hed;
       outline-color: green;
       outline-offset: 9px;
       border-radius: 2px;
@@ -83,6 +83,9 @@
       color: #e01469;
       background-color: blue;
     }
+#secondd {
+  margin-bottom: -20px;
+}
 body {
         background-image: url('../img/sn azzy-image (4).png');
         background-size: cover;
@@ -99,10 +102,15 @@ h1 {
         text-align: center;
         font-size: 50px;
     }
+h2 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
 h3 {
         font-size: 30px;
         margin-bottom: -15px;
-        color: #4287f5;
+        color: #14e05f;
 }
 p {
         font-size: 20px;
