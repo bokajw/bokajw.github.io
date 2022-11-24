@@ -27,13 +27,13 @@
   width: 530px;
   margin-left: 27%;
   margin-right: auto;
+  overflow: hidden;
 }
 .postlist1 {
         list-style-type: none;
         margin-right: auto;
         margin-left: auto;
-        display: block;
-        position: relative;
+
 
       }
 .postlist {
@@ -49,11 +49,12 @@
   color: #63a8a3;
 }
 
-#content2 {
+#myBtnContainer {
   display: block;
   width: 190px;
   position: fixed;
   margin-top: -40px;
+
 }
 
 #categorylist {
@@ -78,6 +79,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2;
+  color: white;
 }
 a, a:active, a:visited {
         text-decoration: none;
@@ -119,3 +121,12 @@ li.category:hover {
   color: #e01469;
   background-color: blue;
 }
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+  background-color: green;
+}
+
+/* darkmode button */

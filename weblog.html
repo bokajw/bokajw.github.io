@@ -5,78 +5,80 @@
     <link rel="stylesheet"  href="css/style-weblog.css"/>
   </head>
   <body>
+    <div class="background">
     <div id="header">
           <h1 style="padding-right: 0px;">Bokaj's site</h1>
           <ul>
               <li class="menuitem"><a href="/index.html">Main</a></li>
               <li class="menuitem"><a id="site" href="/"><span id="grog">Weblog</span></a></li>
-              <li class="menuitem"><a href="https://jakobwilmer.medium.com/">Medium</a></li>
+              <li class="menuitem"><a href="https://ja kobwilmer.medium.com/">Medium</a></li>
           </ul>
+
     </div>
     <div id="contentbody">
-      <div id="content2">
+      <div id="myBtnContainer">
         <h2> Categories </h2>
         <ol id="categorylist">
           <li class="category">
           <img src="img/Notes.png" class="icon2">
-          <a href="#">Opinion</a>
+          <a href="#" onclick="filterSelection('Opinion')">Opinion</a>
           </li>
           <li class="category">
             <img src="img/Netflix.png" class="icon2">
-            <a href="#">Movies</a>
+            <a class="btn" onclick="filterSelection('Movies')" href="#">Movies</a>
           </li>
           <li class="category">
             <img src="img/Messages.png" class="icon2">
-            <a href="#">Social posts</a>
+            <a class="btn" onclick="filterSelection('Social post')" href="#">Social posts</a>
           </li>
           <li class="category">
             <img src="img/Safari.png" class="icon2">
-            <a href="#">Blog-related</a>
+            <a class="btn" onclick="filterSelection('Blog-related')" href="#">Blog-related</a>
           </li>
           <li class="category">
             <img src="img/Books.png" class="icon2">
-            <a href="#">Books</a>
+            <a class="btn" onclick="filterSelection('Books')" href="#">Books</a>
           </li>
           <li class="category">
             <img src="img/Fitness.png" class="icon2">
-            <a href="#">Sports</a>
+            <a class="btn" onclick="filterSelection('Sports')" href="#">Sports</a>
           </li>
           <li class="category">
             <img src="img/Incognito.png" class="icon2">
-            <a href="#">Whatever</a>
+            <a class="btn" onclick="filterSelection('opinion')" href="#">Whatever</a>
           </li>
           <li class="category">
             <img src="img/Incognito.png" class="icon2">
-            <a href="#">Anything</a>
+            <a class="btn" onclick="filterSelection('opinion')" href="#">Anything</a>
           </li>
           <li class="category">
             <img src="img/Incognito.png" class="icon2">
-            <a href="#">something</a>
+            <a class="btn" onclick="filterSelection('opinion')" href="#">something</a>
           </li>
         </ol>
       </div>
       <div id="content1">
       <ol class="postlist1">
-        <li class="postlist"><img src="img/Safari.png" class="icon">
+        <li class="postlist" class="Blog-related"><img src="img/Safari.png" class="icon">
           <span class="date">22 Nov 2022</span>
           <a href="/">The programming of this website</a>
         </li>
-        <li class="postlist">
+        <li class="postlist" class="filterDiv Blogrelated">
           <img src="img/Notes.png" class="icon">
           <span class="date">07 Nov 2022</span>
-          <a href="https://medium.com/cardiflow/the-unruly-direction-of-democracy-and-how-our-survival-depends-on-its-fate-dac7790a1b1c" class="lista">The Unruly Direction of Democracy</a>
+          <a href="https://me dium.com/cardiflow/the-unruly-direction-of-democracy-and-how-our-survival-depends-on-its-fate-dac7790a1b1c" class="lista">Title of this text</a>
         </li>
-        <li class="postlist"><img src="img/Notes.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = ''">
+        <li class="postlist" class="filterDiv Notes"><img src="img/Notes.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = ''">
           <span class="date">06 Jul 2022</span>
-          <a href="https://jakobwilmer.medium.com/jakob-wilmers-guide-to-a-productive-workspace-8f93bc50b241">My Guide to a Productive Workspace</a>
+          <a href="https://ja kobwilmer.medium.com/jakob-wilmers-guide-to-a-productive-workspace-8f93bc50b241">Title of this text</a>
         </li>
-        <li class="postlist"><img src="img/Notes.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"'">
+        <li class="postlist" class="filterDiv Notes"><img src="img/Notes.png" class="icon">
           <span class="date">30 Jan 2022</span>
-          <a href="https://medium.com/@jakobwilmer/the-essay-of-boba-fett-15aa4ed940de">The Essay of Boba Fett</a>
+          <a href="https://me dium.com/@jakobwilmer/the-essay-of-boba-fett-15aa4ed940de">Title of this text</a>
         </li>
-          <li class="postlist"><img src="img/Incognito.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = 'Hello JavaScript!!!'">
+          <li class="postlist" class="filterDiv Sports"><img src="img/Fitness.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = 'Hello JavaScript!!!'">
           <span class="date">22 Nov 2022</span>
-          <a href="...">Title of this text</a>
+          <a href="...">Adventures somewhere in Europe</a>
         </li>
         <li class="postlist"><img src="img/Incognito.png" class="icon">
           <span class="date">22 Nov 2022</span>
@@ -149,9 +151,11 @@
       </ol>
     </div>
     </div>
-    //this is my first javasctipt code//
-    <script type="text/javascript" src="scripts/index.js">
-
+  </div>
+    <script>
+    function myFunction() {
+     let element = document.body;
+     element.classList.toggle("dark-mode");
     </script>
   </body>
 </html>
