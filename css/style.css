@@ -30,6 +30,10 @@
   bottom: 8px;
   display: inline;
 }
+.social {
+  position: relative;
+  display: inline;
+}
 #lista {
   text-align: center;
 }
@@ -86,6 +90,18 @@
 #secondd {
   margin-bottom: -20px;
 }
+
+#content4 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#socialmedia {
+  outline-style: das hed;
+  outline-color: green;
+  outline-offset: 9px;
+  border-radius: 2px;
+}
 body {
         background-image: url('../img/sn azzy-image (4).png');
         background-size: cover;
@@ -114,6 +130,7 @@ h3 {
 }
 p {
         font-size: 20px;
+        color: white;
 
     }
 a, a:active, a:visited {
