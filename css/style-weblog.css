@@ -38,7 +38,10 @@
       }
 .postlist {
   margin-bottom: 3px;
-
+  display: none;
+}
+.show {
+  display: block;
 }
 .icon {
   max-width: 30px;
@@ -121,12 +124,3 @@ li.category:hover {
   color: #e01469;
   background-color: blue;
 }
-
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-  background-color: green;
-}
-
-/* darkmode button */
