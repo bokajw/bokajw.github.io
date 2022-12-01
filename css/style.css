@@ -12,7 +12,7 @@
         right: 20px;
     }
 .menuitem a {
-  color: black;
+  color: ;
 }
 
 .menuitem:hover {
@@ -22,6 +22,8 @@
     }
 .icon {
   max-width: 20px;
+  position: relative;
+  top: 4px;
 }
 .icon2 {
   max-width: 30px;
@@ -176,6 +178,6 @@ a.asa, a.latest {
   color: #14e05f;
 }
 #footer {
-  position: absolute;
+  position: ;
   bottom: 0px;
 }

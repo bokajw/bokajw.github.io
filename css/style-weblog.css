@@ -58,7 +58,6 @@
   width: 190px;
   position: fixed;
   margin-top: -40px;
-
 }
 
 #categorylist {
@@ -114,12 +113,14 @@ p.fuck {
 li.postlist:hover {
   background-color: blue;
 }
+
 a.lista {
   color: #14e05f;
 }
 a.asa {
   color: #404040;
 }
+
 a.asa:hover, a.lista:hover {
   color: #e01469;
 }
@@ -132,7 +133,6 @@ li.category:hover {
 #grog {
   color: #e01469;
 }
-#footer {
-  position: absolute;
-  bottom: 0px;
+p a {
+  color: #404040;
 }
