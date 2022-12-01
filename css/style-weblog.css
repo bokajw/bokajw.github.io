@@ -1,5 +1,5 @@
 #header {
-  text-shadow: 4px 4px #084533;
+  text-shadow: 3px 3px #0f52bf;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -11,18 +11,18 @@
   position: relative;
   display: inline;
   margin: 0 16px 0 16px;
-  text-shadow: 4px 4px #444;
+  text-shadow: 4px 4px #ccc;
   text-align: center;
   font-size: 20px;
   right: 20px;
 }
 .menuitem:hover {
-        text-shadow: 2px 2px #444;
+        text-shadow: 2px 2px #ccc;
         top: 2px;
         right: 18px;
     }
 #content1 {
-  display: ;
+  display: block;
   position: ;
   width: 530px;
   margin-left: 27%;
@@ -49,8 +49,9 @@
   top: 11px;
 }
 .date {
-  color: #63a8a3;
+  color: #404040;
 }
+/* of date color: #63a8a3 */
 
 #myBtnContainer {
   display: block;
@@ -76,35 +77,34 @@
 }
 
 body {
-  background-color: black;
+  background-color: #e6e6df;
   font-family: ibm_vga,monospace!important;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2;
-  color: white;
+  color: #404040;
 }
 a, a:active, a:visited {
         text-decoration: none;
-        color: #ffffff;
     }
 sa:hover, a:hover {
         color: #e01469;
     }
 h1 {
-  color: #14e05f;
+  color: #5998ff;
   text-align: center;
   font-size: 50px;
 }
 h2 {
-  color: #14e05f;
+  color: #404040;
   text-align: center;
   font-size: 20px;
   margin-left: 10%;
   position: static;
 }
 p {
-  color: white;
+  color: #404040;
 }
 p.fuck {
   margin-left: auto;
@@ -114,6 +114,15 @@ p.fuck {
 li.postlist:hover {
   background-color: blue;
 }
+a.lista {
+  color: #14e05f;
+}
+a.asa {
+  color: #404040;
+}
+a.asa:hover, a.lista:hover {
+  color: #e01469;
+}
 li.category:hover {
   background-color: blue;
 }
@@ -122,5 +131,8 @@ li.category:hover {
 }
 #grog {
   color: #e01469;
-  background-color: blue;
+}
+#footer {
+  position: absolute;
+  bottom: 0px;
 }
