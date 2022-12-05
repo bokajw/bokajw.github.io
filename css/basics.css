@@ -103,6 +103,7 @@ p a {
   bottom: 0px;
   width: 100%;
   height: 40px;
+  text-align: center;
 }
 #footer a {
   text-decoration: none;
