@@ -1,3 +1,6 @@
+html {
+    overflow-y: overlay;
+}
 #header {
   text-shadow: 3px 3px #0f52bf;
   text-align: center;

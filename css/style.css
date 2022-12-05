@@ -1,3 +1,6 @@
+html {
+    overflow-y: overlay;
+}
 .menuitem {
     margin: 0 4px 0 4px;
     padding: 0;
@@ -44,7 +47,7 @@
 }
     #header_right {
         align-items: center;
-        text-shadow: 3px 3px #0f52bf;
+        text-shadow: px px #0f52bf;
         text-align: center;
     }
 
@@ -128,6 +131,7 @@ h1 {
         color: #5998ff;
         text-align: center;
         font-size: 50px;
+        font-family: Garamond, Times, serif;
     }
     /* og color: #5998ff */
 h2 {
