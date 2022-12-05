@@ -21,11 +21,11 @@ body {
 /* NOTE: BASICS */
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-family: Garamond, Times, serif;
 }
 p {
-
+  line-height: 1.5;
 }
 /* NOTE: HEADER */
 
@@ -38,7 +38,7 @@ p {
 }
 #header ul li {
   display: inline;
-  margin: 0 12px 0 12px;
+  margin: 0 25px 0 25px;
   outline: dotted;
   outline-offset: 4px;
   outline-color: #55D6BE;
@@ -56,7 +56,14 @@ h2 {
 }
 h3 {
   font-size: 15px;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
+}
+p a {
+  color: #EF6351;
+  text-decoration: none;
+}
+.color {
+  color: #55D6BE;
 }
     /* NOTE: LIST */
       #list ul {
@@ -75,18 +82,36 @@ h3 {
         position: relative;
         top: 5px;
       }
+      /* NOTE: LIST 2 */
+        #list2 ul {
+          list-style-type: none;
+          line-height: 1.5;
+        }
+        #list2 ul a {
+          text-decoration: none;
+          color: #7161EF;
+        }
+        .icon2 {
+          max-width: 25px;
+          position: relative;
+          top: 6px;
+        }
 
 /* NOTE: FOOTER */
 #footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 2.5rem;
+  height: 40px;
+}
+#footer a {
+  text-decoration: none;
+  color: inherit;
 }
 #page {
   position: relative;
-  min-height: 100vh;
+  min-height: 94vh;
 }
 #page2 {
-    padding-bottom: 2.5rem;
+  padding-bottom: 40px;
 }

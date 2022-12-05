@@ -1,0 +1,76 @@
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content1 {
+  display: block;
+  position: ;
+  width: 590px;
+  margin-left: 31%;
+  margin-right: auto;
+  overflow: hidden;
+}
+.postlist1 {
+        list-style-type: none;
+        margin-right: auto;
+        margin-left: auto;
+      }
+.postlist {
+  margin-bottom: 3px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.icon {
+  max-width: 30px;
+  position: relative;
+  top: 11px;
+}
+/* of date color: #63a8a3 */
+
+#myBtnContainer {
+  display: block;
+  width: 190px;
+  position: fixed;
+  margin-top: 40px;
+}
+
+#categorylist {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: arial, sans-serif;
+  left: 10px;
+}
+.icon2 {
+  max-width: 30px;
+  position: relative;
+  top: 11px;
+}
+
+h2 {
+  text-align: center;
+}
+
+a, a:active, a:visited {
+        text-decoration: none;
+    }
+sa:hover, a:hover {
+        color: #e01469;
+    }
+a.lista {
+  color: #7161EF;
+}
+a.asa {
+  color: #404040;
+}
+
+a.asa:hover, a.lista:hover {
+  color: #e01469;
+}
+
+* {
+  box-sizing: inherit;

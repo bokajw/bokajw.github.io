@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/basics.css">
+    <link rel="stylesheet" href="../css/weblog.css">
+    <title>Jakob Wilmer</title>
+  </head>
+  <body>
+    <div id="page">
+      <div id="page2">
+    <div id="header">
+      <h1>
+        JAKOB WILMER
+      </h1>
+      <ul>
+        <li><a href="../html/home.html">Home</a></li>
+        <li><a href="#">Weblog</a></li>
+        <li><a href="https://jakobwilmer.medium.com/">Medium</a></li>
+      </ul>
+    </div>
+    <div class="background">
+
+      <div id="myBtnContainer">
+        <h2> Categories </h2>
+        <ol id="categorylist">
+          <li class="category" onclick="filterObjects('all')">
+          <img src="../img/3/icons8-full-screen-48.png" class="icon2">
+          <a href="#" class="asa">~SHOW ALL~</a>
+          </li>
+          <li class="category" onclick="filterObjects('opinion')">
+          <img src="../img/3/icons8-blog-48.png" class="icon2">
+          <a href="#" class="asa">Opinion</a>
+          </li>
+          <li class="category" onclick="filterObjects('movies')">
+            <img src="../img/3/icons8-film-roll-48.png" class="icon2">
+            <a href="#" class="asa">Movies</a>
+          </li>
+          <li class="category" onclick="filterObjects('social')">
+            <img src="../img/3/icons8-messaging-48 (1).png" class="icon2">
+            <a href="#" class="asa">Social posts</a>
+          </li>
+          <li class="category" onclick="filterObjects('blog')">
+            <img src="../img/3/icons8-website-48.png" class="icon2">
+            <a href="#" class="asa">Blog-related</a>
+          </li>
+          <li class="category" onclick="filterObjects('books')">
+            <img src="../img/3/icons8-open-book-48.png" class="icon2">
+            <a href="#" class="asa">Books</a>
+          </li>
+          <li class="category" onclick="filterObjects('sports')">
+            <img src="../img/3/icons8-running-48.png" class="icon2">
+            <a href="#" class="asa">Sports</a>
+          </li>
+          <li class="category" onclick="filterObjects('design')">
+            <img src="../img/3/icons8-home-48.png" class="icon2">
+            <a href="#" class="asa">Design</a>
+          </li>
+          <li class="category" onclick="filterObjects('other')">
+            <img src="../img/3/icons8-popcorn-48.png" class="icon2">
+            <a href="#" class="asa">Other</a>
+          </li>
+        </ol>
+      </div>
+      <br>
+      <div id="content1">
+      <ol class="postlist1">
+        <li class="postlist blog" class="Blog-related"><img src="../img/3/icons8-website-48.png" class="icon">
+          <span class="date">01 Dec 2022</span>
+          <a href="/Post1" class="lista">The programming of this website</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon">
+          <span class="date">07 Nov 2022</span>
+          <a href="https://me.dium.com/cardiflow/the-unruly-direction-of-democracy-and-how-our-survival-depends-on-its-fate-dac7790a1b1c" class="lista">Title of this text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = ''">
+          <span class="date">06 Jul 2022</span>
+          <a href="https://ja.kobwilmer.medium.com/jakob-wilmers-guide-to-a-productive-workspace-8f93bc50b241" class="lista">Title of this text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = '"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"'">
+          <span class="date">30 Jan 2022</span>
+          <a href="https://me.dium.com/@jakobwilmer/the-essay-of-boba-fett-15aa4ed940de" class="lista">Title of this text</a>
+        </li>
+          <li class="postlist sports"><img src="../img/3/icons8-running-48.png" class="icon" onclick="document.getElementById('displaysection').innerHTML = 'Hello JavaScript!!!'">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Adventures somewhere in Europe</a>
+        </li>
+        <li class="postlist books"><img src="../img/3/icons8-open-book-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist social"><img src="../img/3/icons8-messaging-48 (1).png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist movies"><img src="../img/3/icons8-film-roll-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist social"><img src="../img/3/icons8-messaging-48 (1).png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist movies"><img src="../img/3/icons8-film-roll-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist movies"><img src="../img/3/icons8-film-roll-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist books"><img src="../img/3/icons8-open-book-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist sports"><img src="../img/3/icons8-running-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of this text</a>
+        </li>
+        <li class="postlist social"><img src="../img/3/icons8-messaging-48 (1).png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist sports"><img src="../img/3/icons8-running-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist books"><img src="../img/3/icons8-open-book-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist sports"><img src="../img/3/icons8-running-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist opinion"><img src="../img/3/icons8-blog-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+        <li class="postlist other"><img src="../img/3/icons8-popcorn-48.png" class="icon">
+          <span class="date">22 Nov 2022</span>
+          <a href="..." class="lista">Title of that text</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+    <script src="../scripts/weblog.js"></script>
+
+    <div id="content">
+      </div>
+      <br>
+    </div>
+    <footer id="footer">
+    <hr>
+    <p>© Jakob Wilmer 2022. Icons from <a href="https://icons8.com" class="footer">Icons8</a></p>
+    </footer>
+  </div>
+  </body>
+</html>
