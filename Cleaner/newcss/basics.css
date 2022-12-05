@@ -1,5 +1,5 @@
 html {
-
+  overflow-y: overlay hidden;
 }
 /* Change Selection Text Color When Highlighting */
 ::-moz-selection { background-color: #55D6BE;
@@ -12,10 +12,11 @@ head {
 }
 body {
   color: #404040;
-  background-color: #EDE5DA;
+  background-color: #f5ebe0;
   max-width: 740px;
   margin-left: auto;
   margin-right: auto;
+  font-family: arial, sans-serif;
 }
 /* NOTE: BASICS */
 
@@ -49,15 +50,43 @@ p {
 }
 
 /* NOTE: BODY "CONTENT" */
+h2 {
+  font-size: 23px;
+  margin-bottom: -11px;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+    /* NOTE: LIST */
+      #list ul {
+        list-style-type: none;
+      }
+      #list ul a {
+        text-decoration: none;
+        color: #7161EF;
+      }
+      .date {
+        font-family: monospace;
+        font-size: 14px;
+      }
+      .icon {
+        max-width: 20px;
+        position: relative;
+        top: 5px;
+      }
 
-#list ul {
-  list-style-type: none;
+/* NOTE: FOOTER */
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 2.5rem;
 }
-#list ul a {
-  text-decoration: none;
-  color: #7161EF;
+#page {
+  position: relative;
+  min-height: 100vh;
 }
-.date {
-  font-family: monospace;
-  font-size: 14px;
+#page2 {
+    padding-bottom: 2.5rem;
 }
