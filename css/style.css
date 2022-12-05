@@ -1,6 +1,12 @@
 html {
     overflow-y: overlay;
 }
+/* Change Selection Text Color When Highlighting */
+::-moz-selection { background-color: #55D6BE;
+color: #fff; }
+::selection { background-color: #56D6BE;
+color: #fff; }
+/* END */
 .menuitem {
     margin: 0 4px 0 4px;
     padding: 0;
@@ -15,7 +21,8 @@ html {
         right: 20px;
     }
 .menuitem a {
-  color: ;
+  color: #404040;
+  font-family: monospace;
 }
 
 .menuitem:hover {
@@ -41,6 +48,9 @@ html {
 .social {
   position: relative;
   display: inline;
+}
+.date {
+  font-family: monospace;
 }
 #lista {
   text-align: center;
@@ -116,21 +126,22 @@ body {
         background-image: url('../img/sn azzy-image (4).png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: #e6e6df;
+        background-color: #f5ebe0;
+        /* og bg-color #e6e6df; EAF2E3; fdffff; */
         color: #404040;
         animation: fade_in 750ms;
-        line-height: 1.2;
+        line-height: 1.5;
         margin: 0;
-        font-family: ibm_vga,monospace!important;
+        font-family: Arial, sans-serif;
         display: block;
         max-width: 750px;
         margin-left: auto;
         margin-right: auto;
     }
 h1 {
-        color: #5998ff;
+        color: #;
         text-align: center;
-        font-size: 50px;
+        font-size: 70px;
         font-family: Garamond, Times, serif;
     }
     /* og color: #5998ff */
@@ -166,7 +177,6 @@ sa:hover, a:hover {
             margin-inline-start: 0px;
             margin-inline-end: 0px;
             padding-inline-start: 35px;
-            font-family: monospace;
             font-size: 16px;
             color: #404040;
         }
@@ -179,7 +189,7 @@ a.footer, a.contact {
   color: #404040;
 }
 a.asa, a.latest {
-  color: #14e05f;
+  color: #7161EF;
 }
 #footer {
   position: ;

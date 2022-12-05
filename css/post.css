@@ -1,10 +1,16 @@
 html {
     overflow-y: overlay;
 }
+/* Change Selection Text Color When Highlighting */
+::-moz-selection { background-color: #55D6BE;
+color: #fff; }
+::selection { background-color: #55D6BE;
+color: #fff; }
+/* END */
 body {
   background-color: #e6e6df;
   font-family: ibm_vga,monospace!important;
-  max-width: 860px;
+  max-width: 740px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2;
@@ -12,7 +18,7 @@ body {
   }
 
 #header {
-  text-shadow: 3px 3px #0f52bf;
+  text-shadow: 3px 3px #;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +32,7 @@ body {
   text-align: center;
   font-size: 20px;
   right: 20px;
+  font-family: monospace;
 }
 .menuitem:hover {
         text-shadow: 2px 2px #ccc;
@@ -39,9 +46,10 @@ sa:hover, a:hover {
             color: #e01469;
     }
 h1 {
-      color: #5998ff;
-      text-align: center;
-      font-size: 50px;
+  color: #404040;
+  text-align: center;
+  font-size: 70px;
+  font-family: Garamond, Times, serif;
     }
     #grog {
       color: #e01469;
@@ -68,7 +76,7 @@ img.image1 {
   width: 25px;
   position: relative;
   bottom: 9px;
-  left: 400px;
+  left: 295px;
 }
 ol.dateline {
   list-style-type: none;
