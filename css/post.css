@@ -7,7 +7,7 @@ ol.dateline {
 ol.dateline a {
   color: #7161EF;
 }
-li {
+.dateline li {
   display: inline;
 }
 .date {
@@ -28,4 +28,14 @@ li {
 }
 .twitter-share-button {
   display: inline;
+}
+.booklist{
+  list-style-type: decimal;
+  color: #55D6BE;
+}
+.booklist li {
+  padding-bottom: 5px;
+}
+.booklist a {
+  color: #404040;
 }

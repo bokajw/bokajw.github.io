@@ -27,6 +27,10 @@ h1 {
 p {
   line-height: 1.5;
 }
+a, a:active, a:visited {
+        text-decoration: none;
+        color: #7161EF;
+    }
 /* NOTE: HEADER */
 
 #header {
@@ -48,7 +52,10 @@ p {
   color: inherit;
   font-family: Trebuchet MS, sans-serif;
 }
-
+#header ul li:hover {
+  outline: solid;
+  outline-color: #55D6BE;
+}
 /* NOTE: BODY "CONTENT" */
 h2 {
   font-size: 23px;

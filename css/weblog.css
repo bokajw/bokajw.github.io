@@ -12,6 +12,15 @@ body {
   margin-right: auto;
   overflow: hidden;
 }
+.within {
+  float: right;
+  width: 300px;
+  height: auto;
+}
+mark {
+  background-color: #55D6BE;
+  color: #fff;
+}
 #grayed-out {
   color: #ccc;
   font-size: 13px;
