@@ -1,5 +1,5 @@
 body {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -7,10 +7,15 @@ body {
 #content1 {
   display: block;
   position: ;
-  width: 590px;
-  margin-left: 31%;
+  width: 700px;
+  margin-left: 25%;
   margin-right: auto;
   overflow: hidden;
+}
+#grayed-out {
+  color: #ccc;
+  font-size: 13px;
+  font-style: italic;
 }
 .postlist1 {
         list-style-type: none;
@@ -30,10 +35,19 @@ body {
   top: 11px;
 }
 /* of date color: #63a8a3 */
+.rubrik {
+  text-align: left;
+  margin-left: 23.5%;
+  margin-bottom: -30px;
+  margin-top: 30px;
+}
+.rubriken {
+  font-size: 20px;
+}
 
 #myBtnContainer {
   display: block;
-  width: 190px;
+  width: 220px;
   position: fixed;
   margin-top: 40px;
 }
@@ -74,3 +88,7 @@ a.asa:hover, a.lista:hover {
 
 * {
   box-sizing: inherit;
+}
+#projectinside ol li{
+  text-decoration: none;
+}
