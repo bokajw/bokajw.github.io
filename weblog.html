@@ -16,15 +16,38 @@
         document.getElementById('header').innerHTML = html;
       });
     </script>
-    <div id="myBtnContainer"></div>
-    <script>fetch('/projectsidebar.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('myBtnContainer').innerHTML = html;
-      });
-    </script>
     <h2 class="rubrik">Weblog</h2>
     <div class="background">
+      
+      <div id="myBtnContainer">
+        <h2> Categories </h2>
+        <ol id="categorylist">
+          <li class="category" onclick="filterObjects('all')">
+          <img src="img/3/icons8-full-screen-48.png" class="icon2">
+          <a href="#" class="asa">~SHOW ALL~</a>
+          </li>
+          <li class="category" onclick="filterObjects('opinion')">
+          <img src="img/3/icons8-blog-48.png" class="icon2">
+          <a href="#" class="asa">Opinion</a>
+          </li>
+          <li class="category" onclick="filterObjects('blog')">
+            <img src="img/3/icons8-website-48.png" class="icon2">
+            <a href="#" class="asa">Internet Culture</a>
+          </li>
+          <li class="category" onclick="filterObjects('books')">
+            <img src="img/3/icons8-open-book-48.png" class="icon2">
+            <a href="#" class="asa">Books</a>
+          </li>
+          <li class="category" onclick="filterObjects('design')">
+            <img src="img/3/icons8-home-48.png" class="icon2">
+            <a href="#" class="asa">Architecture</a>
+          </li>
+          <li class="category" onclick="filterObjects('other')">
+            <img src="img/3/icons8-popcorn-48.png" class="icon2">
+            <a href="#" class="asa">Other</a>
+          </li>
+        </ol>
+      </div>
       <br>
       <div id="content1">
       <ol class="postlist1">
