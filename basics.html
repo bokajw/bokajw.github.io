@@ -15,12 +15,12 @@
             document.getElementById('header').innerHTML = html;
           });
         </script>
-    <div id="content">
+      <div id="content">
       <h2>Project Name</h2>
       <p>Project Text</p>
       <h3>Project links and updates</h3>
-    </div>
-    <div id="list">
+      </div>
+      <div id="list">
       <ul id="postlist">
         <li class="postlist"><img src="img/3/icons8-website-48.png" class="icon">
           <span class="date">01 Dec 2022</span>
@@ -33,14 +33,15 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div id="footer"></div>
+      <div id="footer"></div>
   <script>fetch('/footer.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('footer').innerHTML = html;
     });
   </script>
+  </div>
+  
   </div>
   </page>
   </body>
