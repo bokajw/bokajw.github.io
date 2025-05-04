@@ -2,13 +2,19 @@ ol.dateline {
   list-style-type: none;
   background-color: #FFF;
   border: dotted;
-  border-color: #55D6BE;
+  border-color: #55D6BE
 }
 ol.dateline a {
   color: #7161EF;
 }
+.dateline {
+  width: auto;
+  position: relative;
+}
 .dateline li {
-  display: inline;
+    display: inline;
+  padding-right: auto;
+  left: 20px;
 }
 .date {
   position: relative;
@@ -24,7 +30,7 @@ ol.dateline a {
   width: 25px;
   position: relative;
   bottom: 9px;
-  left: 120px;
+  left: 12px;
 }
 .twitter-share-button {
   display: inline;

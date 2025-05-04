@@ -4,7 +4,7 @@ html {
 /* Change Selection Text Color When Highlighting */
 ::-moz-selection { background-color: #55D6BE;
 color: #fff; }
-::selection { background-color: #56D6BE;
+::selection { background-color: #39c4bd;
 color: #fff; }
 /* END */
 head {
@@ -12,7 +12,7 @@ head {
 }
 body {
   color: #404040;
-  background-color: #F9F9ED; /* F0E7D8 är snyggt också */ 
+  background-color: #e8e7cc; /* F0E7D8 är snyggt också */
   max-width: 740px;
   margin-left: auto;
   margin-right: auto;
