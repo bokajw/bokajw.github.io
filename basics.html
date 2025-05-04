@@ -13,35 +13,34 @@
           .then(res => res.text())
           .then(html => {
             document.getElementById('header').innerHTML = html;
+           });
+        </script>
+        <div id="content">
+        <h2>Project Name</h2>
+        <p>Project Text</p>
+        <h3>Project links and updates</h3>
+        </div>
+        <div id="list">
+          <ul id="postlist">
+            <li class="postlist"><img src="img/3/icons8-website-48.png" class="icon">
+              <span class="date">01 Dec 2022</span>
+              <a href="/Post1" class="latest">The programming of this website</a>
+            </li>
+            <li class="postlist">
+              <img src="img/3/icons8-blog-48.png" class="icon">
+              <span class="date">07 Nov 2022</span>
+              <a class="latest" href="https://me dium.com/cardiflow/the-unruly-direction-of-democracy-and-how-our-survival-depends-on-its-fate-dac7790a1b1c" class="lista">Title of this text</a>
+            </li>
+          </ul>
+        </div>
+        <div id="footer"></div>
+        <script>fetch('/footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
           });
         </script>
-      <div id="content">
-      <h2>Project Name</h2>
-      <p>Project Text</p>
-      <h3>Project links and updates</h3>
-      </div>
-      <div id="list">
-      <ul id="postlist">
-        <li class="postlist"><img src="img/3/icons8-website-48.png" class="icon">
-          <span class="date">01 Dec 2022</span>
-          <a href="/Post1" class="latest">The programming of this website</a>
-        </li>
-        <li class="postlist">
-          <img src="img/3/icons8-blog-48.png" class="icon">
-          <span class="date">07 Nov 2022</span>
-          <a class="latest" href="https://me dium.com/cardiflow/the-unruly-direction-of-democracy-and-how-our-survival-depends-on-its-fate-dac7790a1b1c" class="lista">Title of this text</a>
-        </li>
-      </ul>
     </div>
-      <div id="footer"></div>
-  <script>fetch('/footer.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('footer').innerHTML = html;
-    });
-  </script>
-  </div>
-  
   </div>
   </page>
   </body>
