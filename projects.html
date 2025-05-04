@@ -9,17 +9,13 @@
   <body>
     <div id="page">
       <div id="page2">
-    <div id="header">
-      <h1>
-        JAKOB WILMER
-      </h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="weblog.html">Weblog</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="https://jakobwilmer.medium.com/">Medium</a></li>
-      </ul>
-    </div>
+        <div id="header"></div>
+        <script>fetch('/banner.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+        </script>
     <!-- NOTE:  <h2 class="rubrik">Project posts</h2> NOTE:  -->
     <div class="background">
 
