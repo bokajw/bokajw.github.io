@@ -8,17 +8,13 @@
   <body>
     <div id="page">
       <div id="page2">
-    <div id="header">
-      <h1>
-        JAKOB WILMER
-      </h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="weblog.html">Weblog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="https://jakobwilmer.medium.com/">Medium</a></li>
-      </ul>
-    </div>
+        <div id="header"></div>
+        <script>fetch('/banner.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+        </script>
     <div id="content">
       <h2>Project Name</h2>
       <p>Project Text</p>
@@ -38,10 +34,13 @@
       </ul>
     </div>
   </div>
-    <footer id="footer">
-    <hr>
-    <p>© Jakob Wilmer 2022. Icons from <a href="https://icons8.com" class="footer">Icons8</a></p>
-    </footer>
+  <div id="footer"></div>
+  <script>fetch('/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+  </script>
   </div>
   </page>
   </body>
