@@ -15,10 +15,13 @@
             document.getElementById('header').innerHTML = html;
            });
         </script>
+
+        <!-- Content below -->
+
         <div id="content">
         <h2>Project Name</h2>
         <p>Project Text</p>
-        <h3>Project links and updates</h3>
+        <h3>Project related links and updates</h3>
         </div>
         <div id="list">
           <ul id="postlist">
@@ -33,6 +36,19 @@
             </li>
           </ul>
         </div>
+
+        <!-- Standard further reading alternatives-->
+
+        <div id="last3"></div>
+        <script>fetch('/last3.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('last3').innerHTML = html;
+          });
+        </script>
+
+        <!-- Footer below -->
+
         <div id="footer"></div>
         <script>fetch('/footer.html')
           .then(res => res.text())
