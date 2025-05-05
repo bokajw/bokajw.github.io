@@ -45,10 +45,12 @@ a, a:active, a:visited {
   margin: 0 25px 0 25px;
   outline: dotted;
   outline-offset: 4px;
+}
+#header ul li.nlist {
   outline-color: #55D6BE;
 }
-.Substack {
-  outline-color: #df5e13;
+#header ul li.ulist {
+  outline-color: #f76521;
 }
 #header a {
   text-decoration: none;
