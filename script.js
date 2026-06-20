@@ -3,8 +3,8 @@ let introTexts = {};
 
 // 1. Hämta datan EN GÅNG när sidan laddas
 Promise.all([
-    fetch('posts.json').then(r => r.json()),
-    fetch('introtexts.json').then(r => r.json())
+    fetch('jsons/posts.json').then(r => r.json()),
+    fetch('jsons/introtexts.json').then(r => r.json())
 ])
 .then(([postsData, introData]) => {
 
@@ -172,7 +172,7 @@ function renderEntries() {
     const entryContainer = document.querySelector('.entry-toc');
     if (!entryContainer) return;
 
-    fetch('entries.json')
+    fetch('jsons/entries.json')
         .then(response => response.json())
         .then(entries => {
             // Nyaste först
