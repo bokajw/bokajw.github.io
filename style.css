@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    color: #111;
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacks header and layout vertically */
+    overflow: hidden;
+    color: #c74f4f;
+    padding: 0;
+}
+
+/*  */
+/*  */
+/*  */
+
+.hero-intro {
+    height: 24vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerar uppifrån och ner */
+    align-items: center;
+    text-align: justify;
+}
+
+.hero-intro p {
+    max-width: 50%;
+}
+
+/* TABLE OF CONTENTS */
+.toc {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    width: 40%;
+}
+.toc p {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.toc-year {
+    text-align: left;
+    font-weight: bold; 
+}
+
+/* LOGO HEADER */
+.logostretch {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 6vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* NAV HEADER */
+
+.schematic-header {
+    display: flex;
+    justify-content: space-between; /* Skjuter isär dina nav-items */
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Mellanrum mellan din SVG och din text */
+    cursor: pointer;
+}
+.nav-item:hover {
+    color: rgb(161, 46, 46);
+}
+
+.nav-icon {
+    width: 14px;
+    height: 14px; 
+    transition: background-color 0.15s ease;
+}
+
+.nav-item:hover {
+    background-color: #640808;
+}/* Byt färg när behållaren hovras */
+
+/* Footer-rutan */
+.foot {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    border: 1px dotted #640808;
+    border-radius: 1px;
+}
+.foot p {
+    text-align: center;
+}
+.foot a {
+    color: #c74f4f;
+    text-decoration: none;
+}
+.foot a:hover {
+    color: #640808;
+    text-decoration: none;
+    cursor: pointer;
+}
+#foot {
+    padding-right: 2vh;
+
+}
+
+.toc a {
+    text-decoration: none;
+    color: #c74f4f;
+}
+
+.toc a:hover{
+    background-color: #640808;
+}
+
+/* Gör själva raden elastisk */
+.toc-branch {
+    align-self: flex-start; 
+}
+.toc-text {
+    display: flex;
+    align-items: flex-end; /* Ser till att texten linjerar snyggt i botten */
+    width: 100%;           /* Kräver att din .toc-behållare har en bestämd bredd */
+    margin: 8px;         /* Lite mellanrum mellan inläggen */
+}
+
+.toc-dots {
+    flex-grow: 1; 
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5); /* Dina prickar! */
+    margin: 0 8px; /* Lite luft mellan text och prickar */
+}
+
+.toc-date {
+    color: #fff;
+    white-space: nowrap; /* Förhindrar att datumet radbryts */
+}
+
+.toc.toc--full {
+    width: 100%;
+    max-width: none;
+}
+
+/* post-texten */
+
+.post-reader {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-align: left;     
+    overflow-y: auto;
+    color: #fff;
+}
+
+.post-reader h1 {
+    font-size: 1.5rem;
+    color: #c74f4f;
+    text-align: center;
+}
+
+.post-reader h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* vvv STATUS.html vvv*/
+* {
+  box-sizing: border-box;
+} 
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+.flexy p {
+    color: #c74f4f;
+}
+
+.flexy h1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.statistics,
+.entry {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-bottom: 20px;
+    border: #c74f4f2d;
+    border-style: dashed;
+}
+
+/* Entry list reuses the TOC tree styling but lives outside .toc,
+   so give it the same text color/spacing rules */
+.entry-toc {
+    width: 95%;
+}
+
+.entry-toc p {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.entry-toc a {
+    text-decoration: none;
+    color: #c74f4f;
+}
+
+.entry-toc a:hover {
+    background-color: #640808;
+}
+
+@media screen and (max-width:850px) {
+  div.flexy {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 256">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4aad33;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M168,176c0,44.18-35.82,80-80,80h-8C35.82,256,0,220.18,0,176h168ZM256,176c0,44.18-35.82,80-80,80v-80h80ZM84,0c46.39,0,84,37.61,84,84s-37.61,84-84,84S0,130.39,0,84,37.61,0,84,0ZM176,0c44.18,0,80,35.82,80,80v8c0,44.18-35.82,80-80,80V0Z"/>
+</svg>

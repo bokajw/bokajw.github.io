@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Website</title>
 </head>
-
-
 <body>
-    <div class="every">
-        <!-- HEADER LOGO -->
+<!-- HEADER LOGO -->
         <nav class="logo-header">
                 <p class="logostretch">
                     <span>C</span>
@@ -25,7 +21,7 @@
                     <span>W</span>
                 </p>
         </nav>
-        <!-- HEADER BUTTONS -->
+<!-- HEADER BUTTONS -->
         <nav class="schematic-header">
             <div class="nav-item" onclick="filterCategory('Home')">
                 <img class="nav-icon home-icon"
@@ -58,37 +54,25 @@
                     width="16">
                 <span>Status</span>
             </div>
-            
-        </nav>
+</nav>
 
-        <!-- Centrerad text -->
-        <section class="hero-intro">
-            <p>This is the website of BokajW. Its primary function is to establish a link from my work, ideas, and creative processes to the public.
-                By forming this link, I aim to cultivate a habit of steady intellectual and creative output, maintaining a desirable façade.
-                <br>
-                <br>
-                Things I would like to add to this website: 1. A "journal", that I treat like twitter. 2. A guestbook. 
-            </p>
-        </section>
+<!-- Text-delen -->
 
-        <!-- Table of Contents -->
-        
-            <div class="toc">
-            </div>
+<main id="post-content" class="post-reader"></main>
 
-        <!-- Footer -->
-            <div class="foot">
-            <p>Other façades</p>
-            <ul id="foot">
-                <li><a href="">Letterboxd</a></li>
-                <li><a href="">E-Mail</a></li>
-            </ul>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileName = urlParams.get('file');
 
-
-<script src="script.js"></script>
+        if (fileName) {
+            fetch(fileName)
+                .then(response => response.text())
+                .then(markdownText => {
+                    document.getElementById('post-content').innerHTML = marked.parse(markdownText);
+                });
+        }
+    </script>
 </body>
-
 </html>
