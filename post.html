@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Website</title>
 </head>
+
+
 <body>
-<!-- HEADER LOGO -->
+    <div class="every">
+        <!-- HEADER LOGO -->
         <nav class="logo-header">
                 <p class="logostretch">
                     <span>C</span>
@@ -21,44 +25,51 @@
                     <span>W</span>
                 </p>
         </nav>
-<!-- HEADER BUTTONS -->
+         <!-- HEADER BUTTONS -->
         <nav class="schematic-header">
-            <div class="nav-item" onclick="filterCategory('Home')">
-                <img class="nav-icon home-icon"
-                    src="/img/Shape 56.svg">      
+            <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#home';">
+                    <img class="nav-icon text-icon"
+                    src="/img/Shape 56.svg">     
                 <span>Home</span>
             </div>
-             <div class="nav-item" onclick="filterCategory('Blog')">
+             <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#weblog';">
                 <img class="nav-icon text-icon"
                     src="/img/Shape 57.svg">
-                <span>"Krönikan"</span>
+                <span>Weblog</span>
             </div>
-            <div class="nav-item" onclick="filterCategory('Philosophy')">
-                <img 
+            <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#philosophy';">
+                    <img 
                     src="/img/Shape 25.svg"
                     height="16"
                     width="16">
                 <span>Philosophy</span>
             </div>
-            <div class="nav-item" onclick="filterCategory('Materiality')">
-                <img 
+            <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#materiality';">
+                    <img 
                     src="/img/Shape 60.svg"
                     height="16"
                     width="16">
                 <span>Materiality</span>
             </div>
-            <div class="nav-item" onclick="filterCategory('Status')">
-                <img 
+            <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#status';">
+                    <img 
                     src="/img/Shape 44.svg"
                     height="16"
                     width="16">
                 <span>Status</span>
             </div>
-</nav>
+            
+        </nav>
 
 <!-- Text-delen -->
 
-<main id="post-content" class="post-reader"></main>
+<main id="post-content" class="post-reader">
+
+
+
+
+
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 

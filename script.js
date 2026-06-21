@@ -64,6 +64,8 @@ function filterCategory(categoryName) {
         .then(html => {
             tocContainer.innerHTML = html;
             renderEntries();
+            renderLetterboxdPosters();
+            renderDaysWithoutGaming();
         });
     return;
 }
@@ -167,6 +169,49 @@ function buildTreeList(container, items, headerText) {
     });
 }
 
+// 
+//
+//
+function renderLetterboxdPosters() {
+    const container = document.querySelector('.last4');
+    if (!container) return;
+
+    const username = 'bokajw';
+    const feedUrl = `https://letterboxd.com/${username}/rss/`;
+    const proxyUrl = `https://corsproxy.io/?url=${encodeURIComponent(feedUrl)}`;
+
+    fetch(proxyUrl)
+        .then(res => res.text())
+        .then(xmlText => {
+            const xml = new DOMParser().parseFromString(xmlText, 'text/xml');
+            const items = Array.from(xml.querySelectorAll('item')).slice(0, 4);
+
+            container.innerHTML = '';
+            items.forEach(item => {
+                const description = item.querySelector('description').textContent;
+                const match = description.match(/<img[^>]+src="([^"]+)"/);
+                if (!match) return;
+
+                const a = document.createElement('a');
+                a.href = item.querySelector('link').textContent;
+                a.target = '_blank';
+                a.rel = 'noopener';
+
+                const img = document.createElement('img');
+                img.src = match[1];
+                img.alt = item.querySelector('title').textContent;
+                img.className = 'last4thumb';
+
+                a.appendChild(img);
+                container.appendChild(a);
+            });
+        })
+        .catch(() => {
+            container.innerHTML = '<p class="toc-text">Could not load movies.</p>';
+        });
+}
+
+
 // Hämtar entries.json och ritar ut listan i .entry-toc (på Status-sidan)
 function renderEntries() {
     const entryContainer = document.querySelector('.entry-toc');
@@ -184,3 +229,23 @@ function renderEntries() {
         });
 }
 
+// Hämtar jsons/gaming.json och räknar dagar sedan senaste speltillfället.
+// Du behöver bara uppdatera "lastGamingDate" i den filen den dagen du spelar igen.
+function renderDaysWithoutGaming() {
+    const counter = document.querySelector('.gaming-counter');
+    if (!counter) return;
+
+    fetch('jsons/gaming.json')
+        .then(response => response.json())
+        .then(data => {
+            const last = new Date(data.lastGamingDate + 'T00:00:00');
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            const diffDays = Math.floor((today - last) / 86400000);
+            counter.textContent = diffDays >= 0 ? diffDays : 0;
+        })
+        .catch(() => {
+            counter.textContent = '?';
+        });
+}

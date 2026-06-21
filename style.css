@@ -6,9 +6,19 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column; /* Stacks header and layout vertically */
-    overflow: hidden;
     color: #c74f4f;
     padding: 0;
+}
+
+* {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /*  */
@@ -84,6 +94,11 @@ body {
 .nav-item:hover {
     background-color: #640808;
 }/* Byt färg när behållaren hovras */
+
+.navpost {
+    text-decoration: none;
+    color: #c74f4f;
+}
 
 /* Footer-rutan */
 .foot {
@@ -197,9 +212,57 @@ body {
 .entry {
     flex: 1 1 0;
     min-width: 0;
-    margin-bottom: 20px;
     border: #c74f4f2d;
     border-style: dashed;
+}
+.statistics p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-dots {
+    flex-grow: 1;
+    margin: 0 8px;
+}
+
+.stat-value {
+    white-space: nowrap;
+    color: #fff;
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+.media-row {
+    display: flex;
+    gap: 8px;
+    margin: 8px 0 16px;
+    align-items: flex-start;
+}
+
+.media-row .stat-value {
+    flex: 1;        /* takes up remaining space */
+    min-width: 0;   /* allows shrinking instead of overflowing */
+    overflow-wrap: break-word;
+    white-space: normal; /* cancels the nowrap from .stat-value above */
+}
+
+.media-thumb {
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.book-thumb {
+    width: 80px;
+    aspect-ratio: 2 / 3; /* matches your poster proportions */
+    margin-left: 3px;
+}
+
+.podcast-thumb {
+    width: 80px;
+    aspect-ratio: 1 / 1; /* podcast covers are usually square */
+    margin-left: 3px;
 }
 
 /* Entry list reuses the TOC tree styling but lives outside .toc,
@@ -226,4 +289,25 @@ body {
   div.flexy {
     flex-direction: column;
   }
+}
+
+/*                */
+.last4 {
+    display: flex;
+    gap: 8px;
+    margin: 8px 3px 16px;
+    width: 100%;
+}
+
+.last4 a {
+    display: block;
+}
+
+.last4thumb {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
 }
