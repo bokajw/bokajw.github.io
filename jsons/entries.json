@@ -1,5 +1,10 @@
 [
     {
+        "title": "Kafka on the Shore",
+        "date": "2026-06-23",
+        "file": "/entries/kafkaontheshore.md"
+    },
+    {
         "title": "First entry",
         "date": "2026-06-20",
         "file": "/entries/2026-06-20.md"

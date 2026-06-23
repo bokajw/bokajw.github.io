@@ -1,22 +1,5 @@
 [
 { "date": "06-21", "title": "Making a Website.", "file": "posts/Hemsida.md", "category": "Materiality" },
-{ "date": "06-07", "title": "Bryggder.", "file": "posts/brygd.md", "category": "Philosophy" },
-{ "date": "06-04", "title": "Bordeom and Inspiration.", "file": "posts/boredom.md", "category": "Weblog" },
-  { "date": "06-03", "title": "Analyser på ungdomligt vis", "file": "posts/Analys.md" , "category": "Weblog" },
-  { "date": "05-20", "title": "Why do I study Cinema?", "file": "posts/cinema.md", "category": "Weblog"},
-  { "date": "05-17", "title": "Snabba sillar simmar snabbare sovandes, sällan snabbare sittandes, sund sanning, snarlik snurrig strykjärn.", "file": "Förhinder.txt" , "category": "Weblog" },
-  { "date": "05-12", "title": "Förhinder framför förare frångår förstånd", "file": "Förhinder.txt" , "category": "Weblog" },
-  { "date": "04-27", "title": "Grävmaskiner gräver grund grop", "file": "Grävmaskiner.txt", "category": "Fotografi" },
-  { "date": "03-25", "title": "Omvandla ovanliga opala oktaner.", "file": "Opal.txt", "category": "Philosophy" },
-{ "date": "03-20", "title": "Lingon låter lagom lägra.", "file": "lingon.md", "category": "Film" },
-{ "date": "03-25", "title": "AI-Slop: A Cancerous Growth.", "file": "Opal.txt", "category": "Weblog" }, { "date": "03-25", "title": "Information Overflow.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "An Ode to Public Transport.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "Worth a read?", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "Forward Momentum.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "Why do I study Cinema?", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "The Lure of EDCs and Setup Tours.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "Humans, The Driving Anmial.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "A Writer Among How-To Lists and Online Gurus.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "Wanting to Bikepack.", "file": "Opal.txt", "category": "Weblog" },
-{ "date": "03-25", "title": "FIFA Club World Cup Reflections.", "file": "Opal.txt", "category": "Weblog" }
+{ "date": "06-07", "title": "My old weekly blog.", "file": "posts/substack.md", "category": "Weblog" }
+{ "date": "06-01", "title": "Feodal practices shape cities.", "file": "posts/feodalarchitecture.md", "category": "Philosophy" }
 ]
