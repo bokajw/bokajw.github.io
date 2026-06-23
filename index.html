@@ -11,65 +11,67 @@
 
 <body>
     <div class="every">
-        <!-- HEADER LOGO -->
-        <nav class="logo-header">
-                <p class="logostretch">
-                    <span>C</span>
-                    <span>A</span>
-                    <span>R</span>
-                    <span>D</span>
-                    <span>I</span>
-                    <span>F</span>
-                    <span>L</span>
-                    <span>O</span>
-                    <span>W</span>
+        <div class="top-row">
+            <div class="header-sidebar">
+                <!-- HEADER LOGO -->
+                <nav class="logo-header">
+                        <p class="logostretch">
+                            <span>C</span>
+                            <span>A</span>
+                            <span>R</span>
+                            <span>D</span>
+                            <span>I</span>
+                            <span>F</span>
+                            <span>L</span>
+                            <span>O</span>
+                            <span>W</span>
+                        </p>
+                </nav>
+                <!-- HEADER BUTTONS -->
+                <nav class="schematic-header">
+                    <div class="nav-item" onclick="filterCategory('Home')">
+                        <img class="nav-icon home-icon"
+                            src="/img/Shape 56.svg">      
+                        <span>Home</span>
+                    </div>
+                    <div class="nav-item" onclick="filterCategory('Weblog')">
+                        <img class="nav-icon text-icon"
+                            src="/img/Shape 57.svg">
+                        <span>Weblog</span>
+                    </div>
+                    <div class="nav-item" onclick="filterCategory('Philosophy')">
+                        <img 
+                            src="/img/Shape 25.svg"
+                            height="16"
+                            width="16">
+                        <span>Philosophy</span>
+                    </div>
+                    <div class="nav-item" onclick="filterCategory('Materiality')">
+                        <img 
+                            src="/img/Shape 60.svg"
+                            height="16"
+                            width="16">
+                        <span>Materiality</span>
+                    </div>
+                    <div class="nav-item" onclick="filterCategory('Status')">
+                        <img 
+                            src="/img/Shape 44.svg"
+                            height="16"
+                            width="16">
+                        <span>Status</span>
+                    </div>
+                </nav>
+            </div>
+            <!-- Centrerad text -->
+            <section class="hero-intro">
+                <p>This is the website of BokajW. Its primary function is to establish a link from my work, ideas, and creative processes to the public.
+                    By forming this link, I aim to cultivate a habit of steady intellectual and creative output, maintaining a desirable façade.
+                    <br>
+                    <br>
+                    Things I would like to add to this website: 1. A "journal", that I treat like twitter. 2. A guestbook. 
                 </p>
-        </nav>
-        <!-- HEADER BUTTONS -->
-        <nav class="schematic-header">
-            <div class="nav-item" onclick="filterCategory('Home')">
-                <img class="nav-icon home-icon"
-                    src="/img/Shape 56.svg">      
-                <span>Home</span>
-            </div>
-             <div class="nav-item" onclick="filterCategory('Weblog')">
-                <img class="nav-icon text-icon"
-                    src="/img/Shape 57.svg">
-                <span>Weblog</span>
-            </div>
-            <div class="nav-item" onclick="filterCategory('Philosophy')">
-                <img 
-                    src="/img/Shape 25.svg"
-                    height="16"
-                    width="16">
-                <span>Philosophy</span>
-            </div>
-            <div class="nav-item" onclick="filterCategory('Materiality')">
-                <img 
-                    src="/img/Shape 60.svg"
-                    height="16"
-                    width="16">
-                <span>Materiality</span>
-            </div>
-            <div class="nav-item" onclick="filterCategory('Status')">
-                <img 
-                    src="/img/Shape 44.svg"
-                    height="16"
-                    width="16">
-                <span>Status</span>
-            </div>
-            
-        </nav>
-
-        <!-- Centrerad text -->
-        <section class="hero-intro">
-            <p>This is the website of BokajW. Its primary function is to establish a link from my work, ideas, and creative processes to the public.
-                By forming this link, I aim to cultivate a habit of steady intellectual and creative output, maintaining a desirable façade.
-                <br>
-                <br>
-                Things I would like to add to this website: 1. A "journal", that I treat like twitter. 2. A guestbook. 
-            </p>
-        </section>
+            </section>
+        </div>
 
         <!-- Table of Contents -->
         
@@ -86,7 +88,8 @@
             </div>
         -->
     </div>
-
+    <div class="footer">
+    </div>
 
 <script src="script.js"></script>
 </body>

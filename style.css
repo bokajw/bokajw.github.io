@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Archivo', sans-serif;
-    color: #111;
     background-color: #000000;
     height: 100vh;
     display: flex;
@@ -26,16 +25,16 @@ body {
 /*  */
 
 .hero-intro {
-    height: 24vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrerar uppifrån och ner */
-    align-items: center;
+    height: auto; 
+    display: block;
     text-align: justify;
+    width: 550px;
+    margin: 0;
 }
 
 .hero-intro p {
-    max-width: 50%;
+    max-width: 100%;
+    margin-top: 0;
 }
 
 /* TABLE OF CONTENTS */
@@ -55,24 +54,58 @@ body {
 }
 
 /* LOGO HEADER */
+/* ==========================================
+   MOBIL- OCH SURFPLATTLAYOUT (ALLRA LÄNGST NED)
+   ========================================== */
+@media screen and (max-width: 1030px) {
+    .top-row {
+        flex-direction: column !important; /* Tvingar blocken att staplas vertikalt */
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .header-sidebar {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero-intro {
+        max-width: 100%;
+        padding-left: 10px;
+    }
+}
 .logostretch {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    font-size: 6vw;
+    max-width: 350px;
+    min-width: auto;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
 
 /* NAV HEADER */
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Skjuter menyn till vänster och texten till höger */
+    align-items: flex-start;        /* Justerar så att båda börjar exakt i överkant */
+    max-width: 1100px;              /* Sätt samma maxbredd som du har på din statussida */
+    margin: 40px auto 0 auto;       /* Centrerar hela blocket på sidan, ger 40px luft i topp */
+    width: 90%;
+}
+
+.header-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;        /* Matchar bredden på dina knappar och logga */
+    flex-shrink: 0;      /* Garanti: Tillåter ALDRIG att denna spalt trycks ihop */
+}
 
 .schematic-header {
-    display: flex;
-    justify-content: space-between; /* Skjuter isär dina nav-items */
-    align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .nav-item {
@@ -125,6 +158,14 @@ body {
 
 }
 
+/* Ersätt din befintliga .toc-regel i style.css med denna */
+.toc {
+    text-align: left;
+    width: 90%;             /* Exakt samma som .top-row */
+    max-width: 1100px;      /* Exakt samma som .top-row */
+    margin: 40px auto;      /* Centrerar rutan på skärmen och ger luft uppåt/nedåt */
+}
+
 .toc a {
     text-decoration: none;
     color: #c74f4f;
@@ -147,7 +188,7 @@ body {
 
 .toc-dots {
     flex-grow: 1; 
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.5); /* Dina prickar! */
+    border-bottom: 1px dotted rgba(44, 14, 14, 0.5); /* Dina prickar! */
     margin: 0 8px; /* Lite luft mellan text och prickar */
 }
 
@@ -162,14 +203,23 @@ body {
 }
 
 /* post-texten */
+#post-content {
+    width: 600px;
+}
+
+@media only screen and (max-width: 620px) {
+  #post-content {
+    width: 350px;
+  }
+}
 
 .post-reader {
     width: 50%;
     margin: 0 auto;
     margin-top: 10vh;
-    text-align: left;     
+    text-align: justify;     
     overflow-y: auto;
-    color: #fff;
+    color: #ffffffa1;
 }
 
 .post-reader h1 {
@@ -181,6 +231,33 @@ body {
 .post-reader h2 {
     font-size: 1.2rem;
     text-align: center;
+}
+/* POST SHAREBANNER */
+
+.sharebanner {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    border: #c74f4f28;
+    border-style: dashed;
+    margin: 20px auto; /* Centrerar elementet horisontellt */
+}
+#shares {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+}
+#shares :hover {
+    background-color: #640808;
+}
+#shareleft, #shareright {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer; /* Gör att det syns att de går att klicka på */
 }
 
 /* vvv STATUS.html vvv*/
@@ -195,7 +272,6 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 60px;
 }
 .flexy p {
     color: #c74f4f;
