@@ -98,7 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
+         const urlParams = new URLSearchParams(window.location.search);
         const fileName = urlParams.get('file');
 
         if (fileName) {
@@ -146,16 +146,21 @@ function renderSaveButtonState(isSaved) {
 }
 
 if (fileName) {
-    fetch('jsons/posts.json')
-        .then(r => r.json())
-        .then(posts => {
-            currentPostMeta = posts.find(p => p.file === fileName) || null;
-            if (!currentPostMeta) return;
+    Promise.all([
+        fetch('jsons/posts.json').then(r => r.json()).catch(() => []),
+        fetch('jsons/entries.json').then(r => r.json()).catch(() => [])
+    ]).then(([posts, entries]) => {
+        currentPostMeta =
+            posts.find(p => p.file === fileName) ||
+            entries.find(e => e.file === fileName) ||
+            null;
 
-            const saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
-            const isSaved = saved.some(p => p.file === currentPostMeta.file);
-            renderSaveButtonState(isSaved);
-        });
+        if (!currentPostMeta) return;
+
+        const saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+        const isSaved = saved.some(p => p.file === currentPostMeta.file);
+        renderSaveButtonState(isSaved);
+    });
 }
 
 if (saveBtn) {
