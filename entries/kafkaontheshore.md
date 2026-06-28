@@ -16,15 +16,13 @@ One half listened to, one half read. Sadly, the same half.
 
 
 
-Fast forward yet again, this time 3 years, and I am now in possession of the book again. I bought another copy. And this time I also had my hands on another audio book service. In a sweep I listened to the first half, and read the half I had never touched before.
+Fast forward yet again, this time 3 years, and I am now in possession of the book again. I bought another copy. And this time I also have my hands on another audio book service. In a sweep I listened to the first half, and read the half I had never touched before.
 
 
 
-During these years, I must say that I have always carried the story with me. I shouldn't say I have thought about it that often, but something with the logic of Murakami and the world he creates I found to be important. I knew they were, even though I couldn't say why. This intuition is perhaps the same that his characters follow when they act in their precarious ways. Their action seem excempt of all reason and logic, yet at the same time it seems like the most logical thing of them all. I knew this book had something, yet I could not put a word to it. Or, rather, I didn't need to, nor tried. It was just a feeling that I had to finish it. And now I did.
+During these years, I have always carried the story with me. I shouldn't say I have thought about it that often, but something with the logic of Murakami and the world he creates I found to be important. About pursuing something great, yet being trapped by fate. Something along those lines. I can't articulate it really, I just felt it was important. And thus, I felt it was important that I finish the book someday. And now I did it.
 
 
 
-Am I wiser for it? No. Am I content with my decision. Yes. Did I like the book, including the second half? Yes. Do I reccomend that you read it? Yes. Will you think of the book the same as I do? You tell me.
-
-&#x20;
+A great decision.
 
