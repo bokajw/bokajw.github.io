@@ -29,31 +29,31 @@
                 </nav>
                 <!-- HEADER BUTTONS -->
                 <nav class="schematic-header">
-                    <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#home';">
+                    <div class="nav-item" onclick="window.location.href='https://bokajw.github.io/#home';">
                             <img class="nav-icon text-icon"
                             src="/img/Shape 56.svg">     
                         <span>Home</span>
                     </div>
-                    <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#weblog';">
+                    <div class="nav-item" onclick="window.location.href='https://bokajw.github.io/#weblog';">
                         <img class="nav-icon text-icon"
                             src="/img/Shape 57.svg">
                         <span>Weblog</span>
                     </div>
-                    <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#philosophy';">
+                    <div class="nav-item" onclick="window.location.href='https://bokajw.github.io/#philosophy';">
                             <img 
                             src="/img/Shape 25.svg"
                             height="16"
                             width="16">
                         <span>Philosophy</span>
                     </div>
-                    <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#materiality';">
+                    <div class="nav-item" onclick="window.location.href='https://bokajw.github.io/#materiality';">
                             <img 
                             src="/img/Shape 60.svg"
                             height="16"
                             width="16">
                         <span>Materiality</span>
                     </div>
-                    <div class="nav-item" onclick="window.location.href='https:bokajw.github.io/#status';">
+                    <div class="nav-item" onclick="window.location.href='https://bokajw.github.io/#status';">
                             <img 
                             src="/img/Shape 44.svg"
                             height="16"
@@ -134,20 +134,49 @@ if (shareBtn) {
 }
 
 // --- SPARA (BOKMÄRKE) ---
+// Sparar/avsparar det aktuella inlägget i localStorage, under nyckeln "savedPosts".
+// Listan visas sedan på hemsidans "Saved"-flik via buildTreeList() i script.js.
+let currentPostMeta = null;
+
+function renderSaveButtonState(isSaved) {
+    if (!saveBtn) return;
+    saveBtn.innerHTML = isSaved
+        ? 'Saved<img src="/img/Shape 13.svg" height="16px" width="16px">'
+        : 'Save<img src="/img/Shape 13.svg" height="16px" width="16px">';
+}
+
+if (fileName) {
+    fetch('jsons/posts.json')
+        .then(r => r.json())
+        .then(posts => {
+            currentPostMeta = posts.find(p => p.file === fileName) || null;
+            if (!currentPostMeta) return;
+
+            const saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+            const isSaved = saved.some(p => p.file === currentPostMeta.file);
+            renderSaveButtonState(isSaved);
+        });
+}
+
 if (saveBtn) {
     saveBtn.addEventListener('click', () => {
-        // Eftersom vi inte kan öppna webbläsarens meny, ger vi en instruktion:
-        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        const shortcut = isMac ? 'Cmd + D' : 'Ctrl + D';
-        
-        alert(`Tryck på ${shortcut} för att spara det här inlägget som ett bokmärke.`);
-        
-        // VALFRITT TILLÄGG: Spara i localStorage för att använda i din egen kod sen
-        // let saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
-        // if (!saved.includes(window.location.href)) {
-        //     saved.push(window.location.href);
-        //     localStorage.setItem('savedPosts', JSON.stringify(saved));
-        // }
+        if (!currentPostMeta) return; // Metadatan har inte hunnit laddas än
+
+        let saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+        const isSaved = saved.some(p => p.file === currentPostMeta.file);
+
+        if (isSaved) {
+            saved = saved.filter(p => p.file !== currentPostMeta.file);
+        } else {
+            saved.push({
+                title: currentPostMeta.title,
+                date: currentPostMeta.date,
+                file: currentPostMeta.file
+            });
+        }
+
+        localStorage.setItem('savedPosts', JSON.stringify(saved));
+        renderSaveButtonState(!isSaved);
     });
 }
     </script>

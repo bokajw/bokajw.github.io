@@ -60,7 +60,7 @@ body {
     .top-row {
         flex-direction: column !important; /* Tvingar blocken att staplas vertikalt */
         align-items: flex-start;
-        gap: 30px;
+        gap: 8px;
     }
 
     .header-sidebar {
@@ -70,7 +70,11 @@ body {
 
     .hero-intro {
         max-width: 100%;
-        padding-left: 10px;
+        padding-left: 26px;
+    }
+
+    .hero-intro p {
+        margin-top: 0;
     }
 }
 .logostretch {

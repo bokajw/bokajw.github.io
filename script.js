@@ -69,6 +69,7 @@ function filterCategory(categoryName) {
         });
     return;
 }
+
      introBox.style.display = '';
      document.querySelector('.toc').classList.remove('toc--full');
     // Kollar om kategorin finns i lexikonet, och byter i så fall ut texten
@@ -133,11 +134,24 @@ function filterCategory(categoryName) {
         dots.textContent = '└── ...';
         tocContainer.appendChild(dots);
     }
+    // På Home: visa även sparade inlägg under Latest (om det finns några)
+    if (categoryName === 'Home') {
+        const saved = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+        if (saved.length > 0) {
+            const sortedSaved = [...saved].sort((a, b) => b.date.localeCompare(a.date));
+            appendTreeList(tocContainer, sortedSaved, 'Saved');
+        }
+    }
 }
 // Bygger en TOC-liknande trädlista i valfri container utifrån en lista av {title, date, file}
 function buildTreeList(container, items, headerText) {
     container.innerHTML = '';
+    appendTreeList(container, items, headerText);
+}
 
+// Samma som buildTreeList, men rensar INTE containern först.
+// Används för att lägga till t.ex. "Saved" under en redan befintlig lista (Latest).
+function appendTreeList(container, items, headerText) {
     const header = document.createElement('p');
     header.className = 'toc-year';
     header.textContent = headerText;
