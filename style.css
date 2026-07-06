@@ -166,7 +166,9 @@ body {
     text-align: left;
     width: 90%;             /* Exakt samma som .top-row */
     max-width: 1100px;      /* Exakt samma som .top-row */
-    margin: 40px auto;      /* Centrerar rutan på skärmen och ger luft uppåt/nedåt */
+    margin: 40px auto 0 auto;      /* Centrerar rutan på skärmen och ger luft uppåt/nedåt */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .toc a {
@@ -291,8 +293,9 @@ body {
 .entry {
     flex: 1 1 0;
     min-width: 0;
-    border: #c74f4f2d;
-    border-style: dashed;
+    /* border: #c74f4f2d; 
+    border-style: dashed; */
+    background-color: #020202ee;
 }
 .statistics p {
     display: flex;
